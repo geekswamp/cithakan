@@ -1,0 +1,12 @@
+name: repository
+description: Generate a new repository.
+version: 0.1.0
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  name:
+    type: string
+    description: Your repository name.
+    prompt: Please enter your repository name.
