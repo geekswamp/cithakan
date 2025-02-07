@@ -1,0 +1,8 @@
+name: di
+description: Generate a new dependency injection.
+version: 0.1.0
+
+environment:
+  mason: ^0.1.0
+
+vars:
