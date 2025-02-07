@@ -30,6 +30,7 @@ Follow the on-screen instructions to customize the template to your project's ne
 
 - [dio] is a powerful HTTP client for Dart, used for making network requests with features like interceptors, request cancellation, and automatic retries.
 - [envied] is used for managing environment variables securely within the Flutter application.
+- [fpdart] is a functional programming library for Dart that provides powerful monads like Either, Option, and Task to improve code safety and maintainability.
 - [freezed] helps in generation immutable classes and union types, making data modeling and serialization easier.
 - [flutter_secure_storage] is used for securely storing sensitive data, such as authentication tokens and user credentials, using platform-specific encrypted storage.
 - [flutter_bloc] is used for state management, providing a predictable way to manage application state using the BLoC pattern.
@@ -104,6 +105,7 @@ This structure ensures a well-organized codebase for easier maintenance and scal
 [Cithakan]: https://github.com/geekswamp/cithakan.git
 [dio]: https://pub.dev/packages/dio
 [envied]: https://pub.dev/packages/envied
+[fpdart]: https://pub.dev/packages/fpdart
 [freezed]: https://pub.dev/packages/freezed
 [flutter_secure_storage]: https://pub.dev/packages/flutter_secure_storage
 [flutter_bloc]: https://pub.dev/packages/flutter_bloc
