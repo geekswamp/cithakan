@@ -1,0 +1,12 @@
+name: bloc
+description: Generate a new BLoC.
+version: 0.1.0
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  name:
+    type: string
+    description: Your BLoC name.
+    prompt: Please enter your BLoC name.
