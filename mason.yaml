@@ -1,3 +1,9 @@
 bricks:
+  bloc:
+    path: bricks/bloc
+  data_source:
+    path: bricks/data_source
   model:
     path: bricks/model
+  repository:
+    path: bricks/repository
