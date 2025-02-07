@@ -34,6 +34,7 @@ Follow the on-screen instructions to customize the template to your project's ne
 - [freezed] helps in generation immutable classes and union types, making data modeling and serialization easier.
 - [flutter_secure_storage] is used for securely storing sensitive data, such as authentication tokens and user credentials, using platform-specific encrypted storage.
 - [flutter_bloc] is used for state management, providing a predictable way to manage application state using the BLoC pattern.
+- [get_it] is a simple yet powerful service locator for Dart, used to manage dependencies efficiently without relying on Flutter’s `BuildContext`.
 - [injectable] is used for dependency injection, allowing for a modular and testable codebase.
 - [json_serializable] is used to automate the serialization and deserialization of JSON data, reducing boilerplate code and ensuring type safety.
 
@@ -109,5 +110,6 @@ This structure ensures a well-organized codebase for easier maintenance and scal
 [freezed]: https://pub.dev/packages/freezed
 [flutter_secure_storage]: https://pub.dev/packages/flutter_secure_storage
 [flutter_bloc]: https://pub.dev/packages/flutter_bloc
+[get_it]: https://pub.dev/packages/get_it
 [injectable]: https://pub.dev/packages/injectable
 [json_serializable]: https://pub.dev/packages/json_serializable
