@@ -3,6 +3,12 @@ bricks:
     path: bricks/bloc
   data_source:
     path: bricks/data_source
+  di:
+    path: bricks/di
+  env:
+    path: bricks/env
+  failure:
+    path: bricks/failure
   model:
     path: bricks/model
   repository:
