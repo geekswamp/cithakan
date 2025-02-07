@@ -28,6 +28,7 @@ Follow the on-screen instructions to customize the template to your project's ne
 
 ## Dependecies Used
 
+- [dio] is a powerful HTTP client for Dart, used for making network requests with features like interceptors, request cancellation, and automatic retries.
 - [envied] is used for managing environment variables securely within the Flutter application.
 - [freezed] helps in generation immutable classes and union types, making data modeling and serialization easier.
 - [flutter_secure_storage] is used for securely storing sensitive data, such as authentication tokens and user credentials, using platform-specific encrypted storage.
@@ -101,6 +102,7 @@ This structure ensures a well-organized codebase for easier maintenance and scal
 [Mason]: https://pub.dev/packages/mason
 [Flutter]: https://flutter.dev
 [Cithakan]: https://github.com/geekswamp/cithakan.git
+[dio]: https://pub.dev/packages/dio
 [envied]: https://pub.dev/packages/envied
 [freezed]: https://pub.dev/packages/freezed
 [flutter_secure_storage]: https://pub.dev/packages/flutter_secure_storage
