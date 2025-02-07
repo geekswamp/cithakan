@@ -24,6 +24,8 @@ After installation, you can generate a template using the following command:
 mason make cithakan
 ```
 
+Follow the on-screen instructions to customize the template to your project's needs.
+
 ## Dependecies Used
 
 - [envied] is used for managing environment variables securely within the Flutter application.
@@ -92,8 +94,6 @@ lib/
 
 This structure ensures a well-organized codebase for easier maintenance and scalability.
 
-
-Follow the on-screen instructions to customize the template to your project's needs.
 
 <!-- Links -->
 [Javanese language]: https://en.wikipedia.org/wiki/Javanese_language
