@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:mason/mason.dart';
 
 void run(HookContext context) async {
-  _runAddDependencies;
-  _runDartFormat;
-  _runDartFix;
+  _runAddDependencies(context);
+  _runDartFormat(context);
+  _runDartFix(context);
 }
 
 void _runAddDependencies(HookContext context) async {
