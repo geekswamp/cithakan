@@ -11,7 +11,11 @@ bricks:
     path: bricks/failure
   model:
     path: bricks/model
+  modules:
+    path: bricks/modules
   network:
     path: bricks/network
   repository:
     path: bricks/repository
+  storage:
+    path: bricks/storage
