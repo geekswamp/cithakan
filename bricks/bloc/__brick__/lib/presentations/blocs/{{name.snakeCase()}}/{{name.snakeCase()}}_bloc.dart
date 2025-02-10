@@ -9,25 +9,25 @@ part '{{name.snakeCase()}}_state.dart';
 @injectable
 class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.pascalCase()}}State> {
   {{name.pascalCase()}}Bloc() : super(const {{name.pascalCase()}}State.initial()) {
-    on<{{name.pascalCase()}}Event.fetch>(_onFetch);
-    on<{{name.pascalCase()}}Event.add>(_onAdd);
-    on<{{name.pascalCase()}}Event.update>(_onUpdate);
-    on<{{name.pascalCase()}}Event.delete>(_onDelete);
+    on<{{name.pascalCase()}}Fetch>(_onFetch);
+    on<{{name.pascalCase()}}Add>(_onAdd);
+    on<{{name.pascalCase()}}Update>(_onUpdate);
+    on<{{name.pascalCase()}}Delete>(_onDelete);
   }
 
-  void _onFetch({{name.pascalCase()}}Event.fetch event, Emitter<{{name.pascalCase()}}State> emit) async {
+  void _onFetch({{name.pascalCase()}}Fetch event, Emitter<{{name.pascalCase()}}State> emit) async {
     emit(const {{name.pascalCase()}}State.loading());
   }
 
-  void _onAdd({{name.pascalCase()}}Event.add event, Emitter<{{name.pascalCase()}}State> emit) async {
+  void _onAdd({{name.pascalCase()}}Add event, Emitter<{{name.pascalCase()}}State> emit) async {
     emit(const {{name.pascalCase()}}State.loading());
   }
 
-  void _onUpdate({{name.pascalCase()}}Event.update event, Emitter<{{name.pascalCase()}}State> emit) async {
+  void _onUpdate({{name.pascalCase()}}Update event, Emitter<{{name.pascalCase()}}State> emit) async {
     emit(const {{name.pascalCase()}}State.loading());
   }
 
-  void _onDelete({{name.pascalCase()}}Event.delete event, Emitter<{{name.pascalCase()}}State> emit) async {
+  void _onDelete({{name.pascalCase()}}Delete event, Emitter<{{name.pascalCase()}}State> emit) async {
     emit(const {{name.pascalCase()}}State.loading());
   }
 }
