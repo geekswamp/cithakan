@@ -2,13 +2,13 @@ import 'dart:io';
 
 import 'package:mason/mason.dart';
 
-void run(HookContext context) {
-  _runAddDependencies;
-  _runDartFormat;
-  _runDartFix;
+void run(HookContext context) async {
+  await _runAddDependencies(context);
+  await _runDartFormat(context);
+  await _runDartFix(context);
 }
 
-void _runAddDependencies(HookContext context) async {
+Future<void> _runAddDependencies(HookContext context) async {
   final progress = context.logger.progress('Adding dependencies...');
 
   await Process.run('flutter', ['pub', 'add', 'fpdart']);
@@ -19,7 +19,7 @@ void _runAddDependencies(HookContext context) async {
   progress.complete();
 }
 
-void _runDartFormat(HookContext context) async {
+Future<void> _runDartFormat(HookContext context) async {
   final progress = context.logger.progress('Running dart format...');
 
   await Process.run('dart', ['format', '.']);
@@ -27,7 +27,7 @@ void _runDartFormat(HookContext context) async {
   progress.complete();
 }
 
-void _runDartFix(HookContext context) async {
+Future<void> _runDartFix(HookContext context) async {
   final progress = context.logger.progress('Applying dart fix...');
 
   await Process.run('dart', ['fix', '--apply']);
