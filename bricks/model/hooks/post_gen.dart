@@ -14,5 +14,5 @@ void _runAddDependencies(HookContext context) async {
   await Process.run('flutter', ['pub', 'add', '--dev', 'freezed']);
   await Process.run('flutter', ['pub', 'add', '--dev', 'json_serializable']);
 
-  progress.compete();
+  progress.complete();
 }

@@ -11,7 +11,7 @@ void _runAddDependencies(HookContext context) async {
 
   await Process.run('flutter', ['pub', 'add', 'flutter_bloc']);
 
-  progress.compete();
+  progress.complete();
 }
 
 void _runDartFormat(HookContext context) async {

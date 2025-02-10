@@ -12,5 +12,5 @@ void _runAddDependencies(HookContext context) async {
   await Process.run('flutter', ['pub', 'add', '--dev', 'build_runner']);
   await Process.run('flutter', ['pub', 'add', '--dev', 'envied_generator']);
 
-  progress.compete();
+  progress.complete();
 }

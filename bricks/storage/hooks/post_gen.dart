@@ -14,7 +14,7 @@ void _runAddDependencies(HookContext context) async {
   await Process.run('flutter', ['pub', 'add', '--dev', 'build_runner']);
   await Process.run('flutter', ['pub', 'add', '--dev', 'injectable_generator']);
 
-  progress.compete();
+  progress.complete();
 }
 
 void _runDartFormat(HookContext context) async {
