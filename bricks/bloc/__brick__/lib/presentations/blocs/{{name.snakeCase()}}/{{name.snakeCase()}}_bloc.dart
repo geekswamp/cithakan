@@ -15,7 +15,7 @@ class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.
     on<{{name.pascalCase()}}Event.delete>(_onDelete);
   }
 
-  void _doFetch({{name.pascalCase()}}Event.fetch event, Emitter<{{name.pascalCase()}}State> emit) async {
+  void _onFetch({{name.pascalCase()}}Event.fetch event, Emitter<{{name.pascalCase()}}State> emit) async {
     emit(const {{name.pascalCase()}}State.loading());
   }
 
