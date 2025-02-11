@@ -1,0 +1,8 @@
+name: usecase
+description: Generate a new use case.
+version: 0.1.0
+
+environment:
+  mason: ^0.1.0
+
+vars:
