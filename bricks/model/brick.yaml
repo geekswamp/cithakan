@@ -9,4 +9,4 @@ vars:
   name:
     type: string
     description: Your model name.
-    prompt: Please enter your model name.
+    prompt: "Please enter your model name:"

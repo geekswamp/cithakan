@@ -9,4 +9,4 @@ vars:
   name:
     type: string
     description: Your repository name.
-    prompt: Please enter your repository name.
+    prompt: "Please enter your repository name:"

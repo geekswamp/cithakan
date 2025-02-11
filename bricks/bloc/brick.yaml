@@ -9,4 +9,4 @@ vars:
   name:
     type: string
     description: Your BLoC name.
-    prompt: Please enter your BLoC name.
+    prompt: "Please enter your BLoC name:"
