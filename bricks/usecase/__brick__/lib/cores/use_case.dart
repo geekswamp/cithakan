@@ -30,14 +30,14 @@ abstract class UseCase<T, P extends dynamic> {
   TaskEither<Failure, T> call(P params);
 }
 
-/// {@template login_params}
-/// [LoginParams] is a class that defines the parameters for the login use case.
+/// {@template query_params}
+/// [QueryParams] is a class that defines the URL parameters.
 /// {@endtemplate}
 @freezed
 class QueryParams with _$QueryParams {
   const QueryParams._();
 
-  /// {@macro login_params}
+  /// {@macro query_params}
   const factory QueryParams({
     @Default(0) int? offset,
     @Default(10) int? limit,
