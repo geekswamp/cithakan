@@ -1,8 +1,8 @@
-[![Cithakan Demo](https://asciinema.org/a/KjeoJkoMB6e95q6f7VQG2UmRV.svg "Cithakan Demo")](https://asciinema.org/a/KjeoJkoMB6e95q6f7VQG2UmRV)
-
 # Cithakan 🧱
 
 [Cithakan] comes from the [Javanese language], meaning "**Template**". This project is a collection of templates designed to accelerate [Flutter] application development by leveraging the power of [Mason].
+
+[![Cithakan Demo](https://asciinema.org/a/KjeoJkoMB6e95q6f7VQG2UmRV.svg "Cithakan Demo")](https://asciinema.org/a/KjeoJkoMB6e95q6f7VQG2UmRV)
 
 ## Installation
 
