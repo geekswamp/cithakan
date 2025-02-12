@@ -49,6 +49,16 @@ mason make bloc
 
 Follow the on-screen instructions to customize the template to your project's needs.
 
+## Disabling `invalid_annotation_target` Warning
+
+If you're using [freezed] with [json_serializable], recent versions of [json_serializable] and [meta] may need you to disable the `invalid_annotation_target` warning. To do this, add the following to the `analysis_options.yaml` file at the root of your project:
+
+```yaml
+analyzer:
+  errors:
+    invalid_annotation_target: ignore
+```
+
 ## Dependencies Used
 
 - [dio] is a powerful HTTP client for Dart, used for making network requests with features like interceptors, request cancellation, and automatic retries.
@@ -149,4 +159,5 @@ This structure ensures a well-organized codebase for easier maintenance and scal
 [get_it]: https://pub.dev/packages/get_it
 [injectable]: https://pub.dev/packages/injectable
 [json_serializable]: https://pub.dev/packages/json_serializable
+[meta]: https://pub.dev/packages/meta
 [source]: https://github.com/rrousselGit/freezed/issues/464#issuecomment-861376932
