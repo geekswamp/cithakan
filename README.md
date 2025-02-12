@@ -1,4 +1,4 @@
-[![Cithakan Demo](https://asciinema.org/a/1ulNkd7sjRvu5kZbzs8FmXvuJ.svg "Cithakan Demo")](https://asciinema.org/a/1ulNkd7sjRvu5kZbzs8FmXvuJ)
+[![Cithakan Demo](https://asciinema.org/a/KjeoJkoMB6e95q6f7VQG2UmRV.svg "Cithakan Demo")](https://asciinema.org/a/KjeoJkoMB6e95q6f7VQG2UmRV)
 
 # Cithakan 🧱
 
