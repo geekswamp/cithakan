@@ -1,7 +1,7 @@
 import 'package:fpdart/fpdart.dart';
 import 'package:injectable/injectable.dart';
 
-@lazySingleton
+@injectable
 class {{name.pascalCase()}}FetchUseCase extends UseCase<{{name.pascalCase()}}, void> {
   const {{name.pascalCase()}}FetchUseCase(this._repository);
 
