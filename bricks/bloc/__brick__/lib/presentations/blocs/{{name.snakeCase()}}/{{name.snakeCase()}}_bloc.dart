@@ -18,30 +18,30 @@ class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.
   final {{name.pascalCase()}}FetchUseCase _fetchUseCase;
 
   void _onFetch({{name.pascalCase()}}Fetch event, Emitter<{{name.pascalCase()}}State> emit) async {
-    emit(const {{name.pascalCase()}}State.loading());
+    emit(const {{name.pascalCase()}}State.inProgress());
 
     (await _fetchUseCase(null).run()).match(
       (l) {
         emit(const {{name.pascalCase()}}State.failure(l.message));
       },
       (r) {
-        emit(const {{name.pascalCase()}}State.loaded(r.data));
+        emit(const {{name.pascalCase()}}State.success(r.data));
       },
     );
   }
 
   void _onAdd({{name.pascalCase()}}Add event, Emitter<{{name.pascalCase()}}State> emit) async {
     // TODO: Implement your logic here.
-    emit(const {{name.pascalCase()}}State.loading());
+    emit(const {{name.pascalCase()}}State.inProgress());
   }
 
   void _onUpdate({{name.pascalCase()}}Update event, Emitter<{{name.pascalCase()}}State> emit) async {
     // TODO: Implement your logic here.
-    emit(const {{name.pascalCase()}}State.loading());
+    emit(const {{name.pascalCase()}}State.inProgress());
   }
 
   void _onDelete({{name.pascalCase()}}Delete event, Emitter<{{name.pascalCase()}}State> emit) async {
     // TODO: Implement your logic here.
-    emit(const {{name.pascalCase()}}State.loading());
+    emit(const {{name.pascalCase()}}State.inProgress());
   }
 }
