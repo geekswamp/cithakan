@@ -6,13 +6,13 @@
 
 ## Installation
 
-Ensure that  you have [Mason] installed before using Cithakan. If not, install it with the following command:
+Ensure that you have Mason installed before using Cithakan. If not, install it with the following command:
 
 ```bash
 dart pub global activate mason_cli
 ```
 
-Then, add Cithakan to [Mason] by running:
+Then, add Cithakan to Mason by running:
 
 ```bash
 mason add <BRICK_NAME> -g --git-url https://github.com/geekswamp/cithakan --git-path bricks/<BRICK_NAME>
@@ -51,7 +51,7 @@ Follow the on-screen instructions to customize the template to your project's ne
 
 ## Disabling `invalid_annotation_target` Warning
 
-If you're using [freezed] with [json_serializable], recent versions of [json_serializable] and [meta] may need you to disable the `invalid_annotation_target` warning. To do this, add the following to the `analysis_options.yaml` file at the root of your project:
+If you're using `freezed` with `json_serializable`, recent versions of `json_serializable` and [meta] may need you to disable the `invalid_annotation_target` warning. To do this, add the following to the `analysis_options.yaml` file at the root of your project:
 
 ```yaml
 analyzer:
@@ -73,7 +73,7 @@ analyzer:
 
 ## Limitation
 
-[freezed] does not allow inheriting from its generated classes. Instead of inheritance, it is recommended to use **composition** ([source]). For example:
+`freezed` does not allow inheriting from its generated classes. Instead of inheritance, it is recommended to use **composition** ([source]). For example:
 
 ```dart
 @freezed
@@ -86,7 +86,7 @@ class OtherParams with _$OtherParams {
 
 ## Project Structure
 
-A generated project using [Cithakan] follows this structure:
+A generated project using Cithakan follows this structure:
 
 ```
 lib/
@@ -141,9 +141,6 @@ lib/
             ├── some_cubit.dart
             └── some_state.dart
 ```
-
-This structure ensures a well-organized codebase for easier maintenance and scalability.
-
 
 <!-- Links -->
 [Javanese language]: https://en.wikipedia.org/wiki/Javanese_language
