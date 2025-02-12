@@ -15,7 +15,7 @@ dart pub global activate mason_cli
 Then, add Cithakan to Mason by running:
 
 ```bash
-mason add <BRICK_NAME> -g --git-url https://github.com/geekswamp/cithakan --git-path bricks/<BRICK_NAME>
+mason add <YOUR_BRICK_NAME> -g --git-url https://github.com/geekswamp/cithakan --git-path bricks/<BRICK_NAME>
 ```
 
 For example:
@@ -48,6 +48,10 @@ mason make bloc
 ```
 
 Follow the on-screen instructions to customize the template to your project's needs.
+
+> [!IMPORTANT]
+> The naming of BLoC States follows this official BLoC [naming conventions](https://bloclibrary.dev/naming-conventions/#state-conventions) documentation, but this is optional.
+> Feel free to use whatever naming conventions you prefer.
 
 ## Disabling `invalid_annotation_target` Warning
 
