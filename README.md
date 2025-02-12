@@ -26,7 +26,7 @@ mason make cithakan
 
 Follow the on-screen instructions to customize the template to your project's needs.
 
-## Dependecies Used
+## Dependencies Used
 
 - [dio] is a powerful HTTP client for Dart, used for making network requests with features like interceptors, request cancellation, and automatic retries.
 - [envied] is used for managing environment variables securely within the Flutter application.
@@ -37,6 +37,19 @@ Follow the on-screen instructions to customize the template to your project's ne
 - [get_it] is a simple yet powerful service locator for Dart, used to manage dependencies efficiently without relying on Flutter’s `BuildContext`.
 - [injectable] is used for dependency injection, allowing for a modular and testable codebase.
 - [json_serializable] is used to automate the serialization and deserialization of JSON data, reducing boilerplate code and ensuring type safety.
+
+## Limitation
+
+[freezed] does not allow inheriting from its generated classes. Instead of inheritance, it is recommended to use **composition** ([source]). For example:
+
+```dart
+@freezed
+class OtherParams with _$OtherParams {
+  const factory OtherParams({
+    required QueryParams queryParams,
+  }) = _OtherParams;
+}
+```
 
 ## Project Structure
 
@@ -113,3 +126,4 @@ This structure ensures a well-organized codebase for easier maintenance and scal
 [get_it]: https://pub.dev/packages/get_it
 [injectable]: https://pub.dev/packages/injectable
 [json_serializable]: https://pub.dev/packages/json_serializable
+[source]: https://github.com/rrousselGit/freezed/issues/464#issuecomment-861376932
