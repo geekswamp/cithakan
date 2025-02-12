@@ -6,3 +6,7 @@ environment:
   mason: ^0.1.0
 
 vars:
+  name:
+    type: string
+    description: Your use case name.
+    prompt: "Please enter your use case name:"
