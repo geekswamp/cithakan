@@ -13,15 +13,40 @@ dart pub global activate mason_cli
 Then, add Cithakan to [Mason] by running:
 
 ```bash
-mason add cithakan --git-url https://github.com/geekswamp/cithakan.git
+mason add <BRICK_NAME> -g --git-url https://github.com/geekswamp/cithakan --git-path bricks/<BRICK_NAME>
 ```
+
+For example:
+
+```bash
+mason add bloc -g --git-url https://github.com/geekswamp/cithakan --git-path bricks/bloc
+```
+
+Available bricks:
+
+- [bloc](https://github.com/geekswamp/cithakan/tree/main/bricks/bloc)
+- [data_source](https://github.com/geekswamp/cithakan/tree/main/bricks/data_source)
+- [di (dependency injection)](https://github.com/geekswamp/cithakan/tree/main/bricks/di)
+- [env](https://github.com/geekswamp/cithakan/tree/main/bricks/env)
+- [failure](https://github.com/geekswamp/cithakan/tree/main/bricks/failure)
+- [model](https://github.com/geekswamp/cithakan/tree/main/bricks/model)
+- [modules](https://github.com/geekswamp/cithakan/tree/main/bricks/modules)
+- [network](https://github.com/geekswamp/cithakan/tree/main/bricks/network)
+- [repository](https://github.com/geekswamp/cithakan/tree/main/bricks/repository)
+- [storage](https://github.com/geekswamp/cithakan/tree/main/bricks/storage)
 
 ## Usage
 
 After installation, you can generate a template using the following command:
 
 ```bash
-mason make cithakan
+mason make <BRICK_NAME>
+```
+
+For example:
+
+```bash
+mason make bloc
 ```
 
 Follow the on-screen instructions to customize the template to your project's needs.
