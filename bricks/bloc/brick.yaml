@@ -10,3 +10,12 @@ vars:
     type: string
     description: Your BLoC name.
     prompt: "Please enter your BLoC name:"
+
+  bloc_type:
+    type: enum
+    default: bloc
+    description: You can choose your BLoC type.
+    prompt: "Please select your bloc type:"
+    values:
+      - bloc
+      - cubit
