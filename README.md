@@ -27,15 +27,11 @@ mason add bloc -g --git-url https://github.com/geekswamp/cithakan --git-path bri
 Available bricks:
 
 - [bloc](https://github.com/geekswamp/cithakan/tree/main/bricks/bloc)
+- [cores](https://github.com/geekswamp/cithakan/tree/main/bricks/cores)
 - [data_source](https://github.com/geekswamp/cithakan/tree/main/bricks/data_source)
-- [di (dependency injection)](https://github.com/geekswamp/cithakan/tree/main/bricks/di)
-- [env](https://github.com/geekswamp/cithakan/tree/main/bricks/env)
-- [failure](https://github.com/geekswamp/cithakan/tree/main/bricks/failure)
 - [model](https://github.com/geekswamp/cithakan/tree/main/bricks/model)
-- [modules](https://github.com/geekswamp/cithakan/tree/main/bricks/modules)
-- [network](https://github.com/geekswamp/cithakan/tree/main/bricks/network)
 - [repository](https://github.com/geekswamp/cithakan/tree/main/bricks/repository)
-- [storage](https://github.com/geekswamp/cithakan/tree/main/bricks/storage)
+- [usecase](https://github.com/geekswamp/cithakan/tree/main/bricks/usecase)
 
 ## Usage
 
