@@ -1,10 +1,10 @@
 import 'package:mason/mason.dart';
 
 void run(HookContext context) async {
-  _runChoose;
+  await _runChoose(context);
 }
 
-void _runChoose(HookContext context) async {
+Future<void> _runChoose(HookContext context) async {
   final type = context.vars['bloc_type'];
   final progress = context.logger.progress('Generate data source...');
 
