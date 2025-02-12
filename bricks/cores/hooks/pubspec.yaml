@@ -1,4 +1,4 @@
-name: network_hooks
+name: cores_hooks
 
 environment:
   sdk: ^3.5.4

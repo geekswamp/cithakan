@@ -1,5 +1,5 @@
-name: failure
-description: Generate a new failure.
+name: cores
+description: Generate new cores.
 version: 0.1.0
 
 environment:
