@@ -38,7 +38,7 @@ Available bricks:
 After installation, you can generate a template using the following command:
 
 ```bash
-mason make <BRICK_NAME>
+mason make <YOUR_BRICK_NAME>
 ```
 
 For example:
