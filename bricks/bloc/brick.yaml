@@ -15,7 +15,7 @@ vars:
     type: enum
     default: bloc
     description: You can choose your BLoC type.
-    prompt: "Please select your bloc type:"
+    prompt: "Please select your BLoC type:"
     values:
       - bloc
       - cubit
