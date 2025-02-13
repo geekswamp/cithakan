@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'di/di.dart';
+
 /// {@template route_generator}
 /// A class to generate the route based on the settings.
 /// Use this class inside `main.dart` file like this:
@@ -30,8 +32,8 @@ final class RouteGenerator {
         switch (_settings.name) {
           case '/page-one':
             return BlocProvider(
-                create: (context) => getIt<SomeBloc>(),
-                child: const Placeholder(),
+              create: (context) => getIt<SomeBloc>(),
+              child: const Placeholder(),
             );
           case '/page-two':
             return BlocProvider(
@@ -41,7 +43,7 @@ final class RouteGenerator {
           default:
             return const Scaffold(body: Center(child: Text('Page Not Found')));
         }
-      }
+      },
     );
   }
 }
