@@ -5,8 +5,8 @@ import 'package:injectable/injectable.dart';
 abstract interface class {{name.pascalCase()}}RemoteDataSource {
   // TODO: Please customize your methods if needed.
   TaskEither<Failure, {{name.pascalCase()}}> fetch();
-  TaskEither<Failure, {{name.pascaslCase()}}> add();
-  TaskEither<Failure, {{name.pascaslCase()}}> update();
+  TaskEither<Failure, {{name.pascalCase()}}> add();
+  TaskEither<Failure, {{name.pascalCase()}}> update();
 }
 
 @LazySingleton(as: {{name.pascalCase()}}RemoteDataSource)
@@ -20,7 +20,7 @@ final class {{name.pascalCase()}}RemoteDataSourceImpl implements {{name.pascalCa
     return _client.get(
       '', // TODO: Add your path URL.
       (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
-    )
+    );
   }
 
   @override
@@ -29,7 +29,7 @@ final class {{name.pascalCase()}}RemoteDataSourceImpl implements {{name.pascalCa
       '', // TODO: Add your path URL.
       (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
       data: {}
-    )
+    );
   }
 
   @override
@@ -38,6 +38,6 @@ final class {{name.pascalCase()}}RemoteDataSourceImpl implements {{name.pascalCa
       '', // TODO: Add your path URL.
       (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
       data: {}
-    )
+    );
   }
 }

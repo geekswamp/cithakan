@@ -4,7 +4,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:injectable/injectable.dart';
 
 import 'env/env.dart';
-import 'network/dio_client.dart'
+import 'network/dio_client.dart';
 import 'network/network_interceptor.dart';
 import 'secure_storage/secure_storage.dart';
 

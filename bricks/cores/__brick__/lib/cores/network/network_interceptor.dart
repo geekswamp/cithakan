@@ -11,9 +11,12 @@ final class NetworkInterceptor extends QueuedInterceptorsWrapper {
   const NetworkInterceptor();
 
   @override
-  void onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
+  void onRequest(
+    RequestOptions options,
+    RequestInterceptorHandler handler,
+  ) async {
     // TODO: implement onRequest
-    super.onRequest(options, handler)
+    super.onRequest(options, handler);
   }
 
   @override

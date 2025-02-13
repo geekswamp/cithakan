@@ -1,4 +1,4 @@
-part of '{{name.snakeCase()}}_cubit.dart'
+part of '{{name.snakeCase()}}_cubit.dart';
 
 @freezed
 sealed class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
