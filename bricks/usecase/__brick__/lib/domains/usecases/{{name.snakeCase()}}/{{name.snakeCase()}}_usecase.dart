@@ -8,7 +8,7 @@ class {{name.pascalCase()}}FetchUseCase extends UseCase<{{name.pascalCase()}}, v
   final {{name.pascalCase()}}Repository _repository;
 
   @override
-  TaskEither<Failure, void> call(params) {
+  TaskEither<Failure, {{name.pascalCase()}}> call(params) {
     return _repository.fetch(params);
   }
 }
@@ -20,8 +20,8 @@ class {{name.pascalCase()}}AddUseCase extends UseCase<{{name.pascalCase()}}, voi
   final {{name.pascalCase()}}Repository _repository;
 
   @override
-  TaskEither<Failure, void> call(params) {
-    return _repository.add(params);
+  TaskEither<Failure, {{name.pascalCase()}}> call(params) {
+    return _repository.add();
   }
 }
 
@@ -32,7 +32,7 @@ class {{name.pascalCase()}}UpdateUseCase extends UseCase<{{name.pascalCase()}}, 
   final {{name.pascalCase()}}Repository _repository;
 
   @override
-  TaskEither<Failure, void> call(params) {
-    return _repository.update(params);
+  TaskEither<Failure, {{name.pascalCase()}}> call(params) {
+    return _repository.update();
   }
 }
