@@ -22,10 +22,10 @@ class {{name.pascalCase()}}Bloc extends Bloc<{{name.pascalCase()}}Event, {{name.
 
     (await _fetchUseCase(null).run()).match(
       (l) {
-        emit(const {{name.pascalCase()}}State.failure(l.message));
+        emit({{name.pascalCase()}}State.failure(l.message));
       },
       (r) {
-        emit(const {{name.pascalCase()}}State.success(r.data));
+        emit({{name.pascalCase()}}State.success(r));
       },
     );
   }
