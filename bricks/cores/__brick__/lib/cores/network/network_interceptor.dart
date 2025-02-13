@@ -8,7 +8,7 @@ import 'package:injectable/injectable.dart';
 @lazySingleton
 final class NetworkInterceptor extends QueuedInterceptorsWrapper {
   /// {@macro network_interceptor}
-  const NetworkInterceptor();
+  NetworkInterceptor();
 
   @override
   void onRequest(
