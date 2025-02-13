@@ -1,0 +1,14 @@
+@override
+TaskEither<Failure, List<{{name.pascalCase()}}>> fetch() {
+  return _remoteDataSource.fetch();
+}
+
+@override
+TaskEither<Failure, List<{{name.pascalCase()}}>> add() {
+  return _remoteDataSource.add();
+}
+
+@override
+TaskEither<Failure, List<{{name.pascalCase()}}>> update() {
+  return _remoteDataSource.update();
+}

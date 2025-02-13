@@ -2,7 +2,5 @@ import 'package:fpdart/fpdart.dart';
 
 abstract interface class {{name.pascalCase()}}Repository {
   // TODO: Please customize your methods if needed.
-  TaskEither<Failure, {{name.pascalCase()}}> fetch();
-  TaskEither<Failure, {{name.pascalCase()}}> add();
-  TaskEither<Failure, {{name.pascalCase()}}> update();
+  {{#use_single}}{{> single2 }}{{/use_single}}{{#use_list}}{{> list2 }}{{/use_list}}{{#use_none}}{{> none2 }}{{/use_none}}
 }

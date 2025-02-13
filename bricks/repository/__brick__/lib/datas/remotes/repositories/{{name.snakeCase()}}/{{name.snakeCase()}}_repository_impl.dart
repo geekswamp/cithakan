@@ -8,18 +8,5 @@ final class {{name.pascalCase()}}RepositoryImpl implements {{name.pascalCase()}}
 
   final {{name.pascalCase()}}RemoteDataSource _remoteDataSource;
 
-  @override
-  TaskEither<Failure, {{name.pascalCase()}}> fetch() {
-    return _remoteDataSource.fetch();
-  }
-
-  @override
-  TaskEither<Failure, {{name.pascalCase()}}> add() {
-    return _remoteDataSource.add();
-  }
-
-  @override
-  TaskEither<Failure, {{name.pascalCase()}}> update() {
-    return _remoteDataSource.update();
-  }
+  {{#use_single}}{{> single }}{{/use_single}}{{#use_list}}{{> list }}{{/use_list}}{{#use_none}}{{> none }}{{/use_none}}
 }
