@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:mason/mason.dart';
 
 void run(HookContext context) async {
-  await _runAddDependecies(context);
+  await _runAddDependencies(context);
   await _runDartFormat(context);
   await _runDartFix(context);
 }
