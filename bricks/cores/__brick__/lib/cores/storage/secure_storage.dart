@@ -1,7 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:injectable/injectable.dart';
 
-import 'storage_base.dart';
+import 'base_storage.dart';
 
 // TODO: Change your local storage name.
 /// Storage name.
