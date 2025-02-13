@@ -6,7 +6,7 @@ import 'package:injectable/injectable.dart';
 import 'env/env.dart';
 import 'network/dio_client.dart';
 import 'network/network_interceptor.dart';
-import 'secure_storage/secure_storage.dart';
+import 'storage/secure_storage.dart';
 
 /// A module that will be used to inject dependencies.
 @module
