@@ -28,16 +28,16 @@ final class {{name.pascalCase()}}RemoteDataSourceImpl implements {{name.pascalCa
     return _client.post(
       '', // TODO: Add your path URL.
       (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
-      data: {}
+      data: {},
     );
   }
 
   @override
   TaskEither<Failure, {{name.pascalCase()}}> update() {
-    return _client.patch(
+    return _client.put(
       '', // TODO: Add your path URL.
       (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
-      data: {}
+      data: {},
     );
   }
 }
