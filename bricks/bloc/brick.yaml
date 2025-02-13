@@ -19,3 +19,13 @@ vars:
     values:
       - bloc
       - cubit
+
+  return_type:
+    type: enum
+    default: single
+    description: You can choose your return data type in state.
+    prompt: "Please select your return data type in state:"
+    values:
+      - single
+      - list
+      - none

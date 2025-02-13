@@ -1,0 +1,1 @@
+const factory {{name.pascalCase()}}State.success({{name.pascalCase()}} data, [@Default('') String message]) = _{{name.pascalCase()}}LoadSuccess;

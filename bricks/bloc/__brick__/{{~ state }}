@@ -1,0 +1,7 @@
+@freezed
+sealed class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
+  const factory {{name.pascalCase()}}State.initial() = _{{name.pascalCase()}}Initial;
+  const factory {{name.pascalCase()}}State.inProgress() = _{{name.pascalCase()}}LoadInProgress;
+  {{#use_single}}{{> success_single }}{{/use_single}}{{#use_list}}{{> success_list }}{{/use_list}}{{#use_none}}{{> success_none }}{{/use_none}}
+  const factory {{name.pascalCase()}}State.failure(String error) = _{{name.pascalCase()}}LoadFailure;
+}
