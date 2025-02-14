@@ -1,0 +1,3 @@
+TaskEither<Failure, unit> fetch();
+TaskEither<Failure, unit> add();
+TaskEither<Failure, unit> update();

@@ -1,0 +1,25 @@
+@override
+TaskEither<Failure, {{name.pascalCase()}}> fetch() {
+  return _client.get(
+    '', // TODO: Add your path URL.
+    (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
+  );
+}
+
+@override
+TaskEither<Failure, {{name.pascalCase()}}> add() {
+  return _client.post(
+    '', // TODO: Add your path URL.
+    (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
+    data: {},
+  );
+}
+
+@override
+TaskEither<Failure, {{name.pascalCase()}}> update() {
+  return _client.patch(
+    '', // TODO: Add your path URL.
+    (resp) => {{name.pascalCase()}}.fromJson(resp['data']),
+    data: {},
+  );
+}

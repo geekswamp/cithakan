@@ -1,0 +1,25 @@
+@override
+TaskEither<Failure, unit> fetch() {
+  return _client.get(
+    '', // TODO: Add your path URL.
+    (resp) {},
+  );
+}
+
+@override
+TaskEither<Failure, unit> add() {
+  return _client.post(
+    '', // TODO: Add your path URL.
+    (resp) {},
+    data: {},
+  );
+}
+
+@override
+TaskEither<Failure, unit> update() {
+  return _client.patch(
+    '', // TODO: Add your path URL.
+    (resp) {},
+    data: {},
+  );
+}

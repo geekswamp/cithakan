@@ -1,0 +1,3 @@
+TaskEither<Failure, List<{{name.pascalCase()}}>> fetch();
+TaskEither<Failure, List<{{name.pascalCase()}}>> add();
+TaskEither<Failure, List<{{name.pascalCase()}}>> update();

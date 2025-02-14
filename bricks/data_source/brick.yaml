@@ -19,3 +19,13 @@ vars:
     values:
       - local
       - remote
+
+  return_type:
+    type: enum
+    default: single
+    description: You can choose your return data type.
+    prompt: "Please select your return data type:"
+    values:
+      - single
+      - list
+      - none
