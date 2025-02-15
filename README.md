@@ -15,7 +15,7 @@ dart pub global activate mason_cli
 Then, add Cithakan to Mason by running:
 
 ```bash
-mason add <YOUR_BRICK_NAME> -g --git-url https://github.com/geekswamp/cithakan --git-path bricks/<BRICK_NAME>
+mason add <BRICK_NAME> -g --git-url https://github.com/geekswamp/cithakan --git-path bricks/<BRICK_NAME>
 ```
 
 For example:
@@ -38,7 +38,7 @@ Available bricks:
 After installation, you can generate a template using the following command:
 
 ```bash
-mason make <YOUR_BRICK_NAME>
+mason make <BRICK_NAME>
 ```
 
 For example:
