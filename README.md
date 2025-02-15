@@ -110,6 +110,7 @@ class QueryParams with _$QueryParams {
 @freezed
 class OtherParams with _$OtherParams {
   const factory OtherParams({
+    required int id,
     required QueryParams queryParams,
   }) = _OtherParams;
 }
