@@ -80,6 +80,33 @@ analyzer:
 `freezed` does not allow inheriting from its generated classes. Instead of inheritance, it is recommended to use **composition** ([source]). For example:
 
 ```dart
+// You can find this class in lib/cores/use_case.dart.
+@freezed
+class QueryParams with _$QueryParams {
+  const QueryParams._();
+
+  const factory QueryParams({
+    @Default(0) int? offset,
+    @Default(10) int? limit,
+    @Default(1) int? page,
+    @Default(SortOrder.asc) SortOrder? sortOrder,
+    String? search,
+  }) = _QueryParams;
+
+  Map<String, dynamic> toJson() {
+    return Map<String, dynamic>.fromEntries(
+        {
+          'offset': offset,
+          'limit': limit,
+          'page': page,
+          'search': search,
+          'order': sortOrder?.value,
+        }.entries.where((e) => e.value != null)
+    );
+  }
+}
+
+// freezed doesn't support inheritance, use composition instead.
 @freezed
 class OtherParams with _$OtherParams {
   const factory OtherParams({
