@@ -14,7 +14,7 @@ Future<void> _runAddDependencies(HookContext context) async {
   await Process.run('flutter', ['pub', 'add', 'dio']);
   await Process.run('flutter', ['pub', 'add', 'envied']);
   await Process.run('flutter', ['pub', 'add', 'freezed_annotation']);
-  await Process.run('flutter', ['pub', 'add', 'flutter_secure_storage']);
+  await Process.run('flutter', ['pub', 'add', 'flutter_secure_storage:^9.2.4']);
   await Process.run('flutter', ['pub', 'add', 'fpdart']);
   await Process.run('flutter', ['pub', 'add', 'get_it']);
   await Process.run('flutter', ['pub', 'add', 'injectable']);
