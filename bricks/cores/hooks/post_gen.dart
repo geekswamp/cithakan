@@ -22,6 +22,12 @@ Future<void> _runAddDependencies(HookContext context) async {
   await Process.run('flutter', ['pub', 'add', '--dev', 'envied_generator']);
   await Process.run('flutter', ['pub', 'add', '--dev', 'freezed']);
   await Process.run('flutter', ['pub', 'add', '--dev', 'injectable_generator']);
+  await Process.run('flutter', [
+    'pub',
+    'upgrade',
+    '--major-versions',
+    '--tighten',
+  ]);
 
   progress.complete();
 }
