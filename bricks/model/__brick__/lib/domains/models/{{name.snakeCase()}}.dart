@@ -4,7 +4,7 @@ part '{{name.snakeCase()}}.freezed.dart';
 part '{{name.snakeCase()}}.g.dart';
 
 @freezed
-class {{name.pascalCase()}} with _${{name.pascalCase()}} {
+abstract class {{name.pascalCase()}} with _${{name.pascalCase()}} {
   // TODO: Add your named parameters.
   const factory {{name.pascalCase()}}({
     required String id,
