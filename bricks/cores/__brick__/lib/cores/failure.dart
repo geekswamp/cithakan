@@ -8,10 +8,12 @@ sealed class Failure with _$Failure implements Exception {
     @Default('') String message,
     StackTrace? stackTrace,
   ]) = CacheFailure;
+
   const factory Failure.server([
     @Default('') String message,
     StackTrace? stackTrace,
   ]) = ServerFailure;
+
   const factory Failure.isolateParser([
     @Default('') String message,
     StackTrace? stackTrace,
