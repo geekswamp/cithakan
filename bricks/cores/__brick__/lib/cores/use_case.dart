@@ -35,27 +35,40 @@ abstract class UseCase<T, P extends dynamic> {
 /// {@endtemplate}
 @freezed
 class QueryParams with _$QueryParams {
-  const QueryParams._();
-
   /// {@macro query_params}
-  const factory QueryParams({
-    @Default(0) int? offset,
-    @Default(10) int? limit,
-    @Default(1) int? page,
-    @Default(SortOrder.asc) SortOrder? sortOrder,
-    String? search,
-  }) = _QueryParams;
+  QueryParams({
+    this.offset = 0,
+    this.limit = 10,
+    this.page = 1,
+    this.sortOrder = SortOrder.asc,
+    this.search,
+  });
+
+  @override
+  final int? offset;
+
+  @override
+  final int? limit;
+
+  @override
+  final int? page;
+
+  @override
+  final String? search;
+
+  @override
+  final SortOrder? sortOrder;
 
   /// Convert the parameters to a JSON object.
   Map<String, dynamic> toJson() {
     return Map<String, dynamic>.fromEntries(
-        {
-          'offset': offset,
-          'limit': limit,
-          'page': page,
-          'search': search,
-          'order': sortOrder?.value,
-        }.entries.where((e) => e.value != null)
+      {
+        'offset': offset,
+        'limit': limit,
+        'page': page,
+        'search': search,
+        'order': sortOrder?.value,
+      }.entries.where((e) => e.value != null),
     );
   }
 }
