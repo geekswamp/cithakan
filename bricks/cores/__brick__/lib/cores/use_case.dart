@@ -4,6 +4,7 @@ import 'package:fpdart/fpdart.dart';
 import 'failure.dart';
 
 part 'use_case.freezed.dart';
+part 'use_case.g.dart';
 
 /// {@template use_case}
 /// [UseCase] is an abstract class that defines the use case for the application.
@@ -34,14 +35,16 @@ abstract class UseCase<T, P extends dynamic> {
 /// [QueryParams] is a class that defines the URL parameters.
 /// {@endtemplate}
 @freezed
+@JsonSerializable()
 class QueryParams with _$QueryParams {
   /// {@macro query_params}
   QueryParams({
-    this.offset = 0,
-    this.limit = 10,
-    this.page = 1,
+    @JsonKey(name: 'offset', defaultValue: 0) this.offset = 0,
+    @JsonKey(name: 'limit', defaultValue: 10) this.limit = 10,
+    @JsonKey(name: 'page', defaultValue: 1) this.page = 1,
+    @JsonKey(name: 'order', defaultValue: SortOrder.asc)
     this.sortOrder = SortOrder.asc,
-    this.search,
+    @JsonKey(name: 'search') this.search,
   });
 
   @override
@@ -59,18 +62,10 @@ class QueryParams with _$QueryParams {
   @override
   final SortOrder? sortOrder;
 
-  /// Convert the parameters to a JSON object.
-  Map<String, dynamic> toJson() {
-    return Map<String, dynamic>.fromEntries(
-      {
-        'offset': offset,
-        'limit': limit,
-        'page': page,
-        'search': search,
-        'order': sortOrder?.value,
-      }.entries.where((e) => e.value != null),
-    );
-  }
+  factory QueryParams.fromJson(Map<String, dynamic> json) =>
+      _$QueryParamsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$QueryParamsToJson(this);
 }
 
 /// {@template sort_order}
